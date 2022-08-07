@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'ds-digii';
+    src: url('fonts/DS-DIGII.TTF') format('truetype');
+}
+
+:root{
+    --greenClock: #89ff7b;
+    --yellowClock: #fade6d;
+    --redClock: #f16028;
+    --tags: #9a0000;
+    --clockBase: #3e3e3e;
+}
+
+*{
+    color: white;
+    font: bold 1em Arial;
+    letter-spacing: 2px;
+    text-align: center;
+
+    margin: 0px;
+}
+
+body{
+    background-color: #222222;
+    margin: 20px;
+}
+
+main{
+    background-color: var(--clockBase);
+
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+p{
+    background-color: var(--tags);
+
+    display: block;
+    width: fit-content;
+    padding: 2px 16px;
+    margin: 5px auto;
+    
+}
+
+.am > p, .pm > p{
+    padding: 2px 2px;
+
+}
+
+p.time{
+    background-color: black;
+
+    display: block;
+    margin: auto;
+}
+span{
+    background-color: black;
+    color: var(--greenClock);
+    font: normal 3em 'ds-digii';
+    text-shadow: 0px 0px 25px var(--greenClock);
+
+    display: block;
+    margin: auto;
+    border: ridge 4px #747474;
+}
+
+div{
+    margin: 10px;
+}
+
+div.dot{
+    background-color: var(--greenClock);
+    text-shadow: 0px 0px 25px var(--greenClock);
+
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+div.dots{
+    display: flex;
+    flex-direction: column;
+    margin-block: 45px;
+
+}
