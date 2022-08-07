@@ -52,7 +52,6 @@ var hour = date.getHours()
     hour = hour<10?'0'+hour:hour
 var minute = date.getMinutes()
     minute = minute<10?'0'+minute:minute
-//var ampm = ''
 
 var clockYear = document.querySelector('div.year span')
 var clockMonth = document.querySelector('div.month span')
@@ -65,3 +64,12 @@ clockMonth.innerHTML = month
 clockDay.innerHTML = day
 clockHour.innerHTML = hour
 clockMinute.innerHTML = minute
+
+var am = document.querySelector('div.am > div')
+var pm = document.querySelector('div.pm > div')
+
+if(hour>=0 && hour<=12){
+    pm.style.backgroundColor = '#115b01'
+}else{
+    am.style.backgroundColor = '#115b01'
+}
