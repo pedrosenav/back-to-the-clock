@@ -74,6 +74,5 @@ function clock(){
     }else{
         am.style.backgroundColor = '#115b01'
     }
-
 }
-setInterval(clock,50000)
+setInterval(clock,10000)
